@@ -15,7 +15,9 @@
       --border: #1f2937;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -59,6 +61,10 @@
       margin-bottom: 30px;
     }
 
+    .badge-section {
+      padding: 16px;
+    }
+
     h2 {
       margin-top: 0;
       color: var(--green);
@@ -74,16 +80,17 @@
       text-decoration: underline;
     }
 
-    .badges {
+    .badge-container {
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      align-items: center;
+      margin-top: 10px;
     }
 
     iframe {
       border: none;
-      width: 350px;
-      height: 200px;
+      width: 300px;
+      height: 150px;
     }
 
     .links {
@@ -116,21 +123,22 @@
       <h1>Sai Aditya <span>| Offensive Security Engineer</span></h1>
       <p class="prompt">&gt; whoami</p>
       <p>
-        Cybersecurity Engineer specializing in <b>AI Red Teaming, Penetration Testing,
-        and Vulnerability Research</b>.  
-        I break systems to make them resilient, with a strong focus on real-world
-        attack paths and ethical security testing.
+        Cybersecurity engineer specializing in AI red teaming, penetration testing,
+        and vulnerability research. I break systems to make them resilient, with a
+        strong focus on real-world attack paths and ethical security testing.
       </p>
     </div>
 
     <!-- TRYHACKME -->
-    <div class="section">
-      <h2>TryHackMe Profile Badge</h2>
-      <div class="badges">
+    <div class="section badge-section">
+      <h2>TryHackMe</h2>
+
+      <div class="badge-container">
         <iframe
           src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4899559">
         </iframe>
       </div>
+
       <div class="links">
         <a href="https://tryhackme.com/p/Highblaster" target="_blank">View Profile</a>
       </div>
@@ -159,11 +167,11 @@
         poisoning. Documented behavioral failure modes and proposed mitigation
         strategies for AI-driven systems.
       </p>
-      <p><i>Tools:</i> Custom payloads, Prompt Engineering, Python</p>
+      <p><i>Tools:</i> Prompt engineering, custom payloads, Python</p>
 
       <hr>
 
-      <p><b>Vulnerability Assessment & Penetration Testing Lab</b></p>
+      <p><b>Vulnerability Assessment and Penetration Testing Lab</b></p>
       <p>
         Designed and executed a controlled lab environment using Kali Linux and
         Metasploitable2 to conduct reconnaissance, exploitation, and CVE mapping.
